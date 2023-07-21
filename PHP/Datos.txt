@@ -2,3 +2,9 @@ Hernan beron361@gmail.com Moreno ¿porque tortomano es tan lindo?
 Brandon  Brandon@gmail.com Calimares ¿porque matoox me viola? 
 pablo  PablitoTecnico@gmail.com Tecnico ¿porque pablo no me devuelve la pc ? 
 pablo :PablitoTecnico@gmail.com:Tecnico:¿porque pablo no me devuelve la pc ? 
+Giuliana:PablitoTecnico@gmail.com:Calimares:
+pablo :beron361@gmail.com:Calimares:ONICHAN
+Hernan:juan@gmail.com:Moreno:1234
+pepito:ayuda@gmail.com:Calimares:1234
+ayuda:ayuda@gmail.com:Calimares:1234pepito:ayuda@gmail.com:Moreno:1234
+brandon:ayuda@gmail.com:Calimares:1234
