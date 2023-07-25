@@ -11,7 +11,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   overflow-x: hidden;
 }
 
@@ -121,9 +121,23 @@ p {
 }
 
 
-
-
 li{
   list-style-type: none;
 }
 
+@media screen and (max-width: 821px){
+  .preguntas{
+    width: 100%;
+  }
+  #contenedor-preguntas{
+    background-color: transparent;
+  }  
+
+}
+
+@media screen and (min-width:822px)  and (max-width:1200px){
+    #contenedor-preguntas{
+      margin-bottom: 60px;
+    }
+   
+}
