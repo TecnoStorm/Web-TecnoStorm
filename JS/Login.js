@@ -6,7 +6,7 @@ $("#boton").click(TomarDato);
 $("#salir").click(salir);
 $("#btnregistrar").click(registrar);
 $("#salirRegistrar").click(salirRegistrar)
-
+$("#loginMedia").click(TomarDato)
 formulario.addEventListener('submit',function(e){
     e.preventDefault();
     var datos = new FormData(formulario);
@@ -61,7 +61,8 @@ function Envio(){
      method: 'POST',
      data: { 'usuario': usuario, 'clave': clave},
      success: function(response) {
-         $("#mensaje-login").html(response)
+      alert("hola")   
+      $("#mensaje-login").html(response)
      },
      error: function() {
        alert("Error en la solicitud");

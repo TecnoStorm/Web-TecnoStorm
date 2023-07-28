@@ -255,7 +255,10 @@ h2{
 }
 #contenedor-x{
   display: flex;
-  justify-content: end;
-
+  justify-content: end
   
+}
+.ContenedorInputs{
+  display: flex;
+  flex-direction: column;
 }

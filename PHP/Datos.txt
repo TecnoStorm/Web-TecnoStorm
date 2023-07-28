@@ -1,10 +1,13 @@
-Hernan beron361@gmail.com Moreno ¿porque tortomano es tan lindo?
-Brandon  Brandon@gmail.com Calimares ¿porque matoox me viola? 
-pablo  PablitoTecnico@gmail.com Tecnico ¿porque pablo no me devuelve la pc ? 
-pablo :PablitoTecnico@gmail.com:Tecnico:¿porque pablo no me devuelve la pc ? 
-Giuliana:PablitoTecnico@gmail.com:Calimares:
-pablo :beron361@gmail.com:Calimares:ONICHAN
-Hernan:juan@gmail.com:Moreno:1234
-pepito:ayuda@gmail.com:Calimares:1234
-ayuda:ayuda@gmail.com:Calimares:1234pepito:ayuda@gmail.com:Moreno:1234
-brandon:ayuda@gmail.com:Calimares:1234
+Oscar:beron361@gmail.com:Moreno:no vamos a poner nada raro nunca mas
+brandon:beron361@gmail.com:Calimares:Todo bien ?
+pepito:123:Tecnico:456
+ayuda:ayuda@gmail.com:Calimares:no pongamos nada raro
+hernan:beron361@gmail.com:Fernandez:hola
+hernan:jashdjah:Fernandez:1234567890
+brandon:beron361@gmail.com:Calimares:123
+hernan:ayuda@gmail.com:Fernandez:ayuda porfavor
+hernan:beron361@gmail.com:Calimares:123
+brandon:ayuda@gmail.com:Fernandez:1234554
+brandon:jashdjah:tortomano:espero que funcione 
+matoox:4445:Tecnico:tarea
+Oscar:beron361@gmail.com:Fernandez:juan

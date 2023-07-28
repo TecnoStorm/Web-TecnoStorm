@@ -7,6 +7,5 @@ $comentario= $nombre. ":". $correo . ":" .$apellido . ":". $pregunta. "\n";
 $archivo=fopen("Datos.txt","a");
 fwrite($archivo,$comentario);
 fclose($archivo);
-echo "pregunta enviada con exito";
-
+echo ("pregunta enviada con exito")
 ?>
