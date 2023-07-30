@@ -216,8 +216,36 @@ header {
     width: 100%;
     position:relative;
   }
+  #botonEncabezado{
+    display: none;
+  }
+  #logoMediaQuery{
+    display:none;
+    
+  }
+  #loginMedia{
+    display: none;
+  }
+  #opcionesMedia{
+    display: none;
+  }
+  @media screen and (max-width:700px){
 
-  @media screen and (max-width:881px){
+    #encabezado{
+      display: none;
+    }
+    
+    #logoMediaQuery{
+      display:block;
+      width: 50%;
+    }
+    #loginMedia{
+      display: block;
+    }
+    #opcionesMedia{
+      display:block; 
+    }
+    
     header{
       display: none;
     }
@@ -230,6 +258,7 @@ header {
       width: fit-content;
       flex-direction: column;
       height: fit-content;
+      z-index: 9999;
     }
     .contenedor-Registrar{
       width: fit-content;
@@ -270,10 +299,94 @@ header {
       padding: 0;
     }
   }
-  @media screen  and (max-width: 1199px){
-    header{
-      display: none;
-    }
+  #contenedorBotonEncabezado{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+ }
+ #menu{
+   display: none;
+   flex-direction: column;
+   width: fit-content;
+   height: fit-content;
+   background-color: rgb(70, 132, 138);
+  position: fixed;
+ 
+ }
+ h2{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: rgba(7, 55, 59, 0.908);
+ }
+ .enlace-menu{
+   background-color: white;
+   border:1px solid black;
+   border-radius: 5px;
+   margin: 5px;
+   width: fit-content;
+   color: rgba(7, 55, 59, 0.908);
+   font-family: Arial, Helvetica, sans-serif;
+   box-shadow: 2px 2px 2px rgba(23, 120, 129, 0.908);
+ }
+ #contenedorTotalMenu{
+   display: flex;
+   justify-content: end;
+ 
+ }
+ #contenedor-x{
+   display: flex;
+   justify-content: end
+   
+ }
+ .ContenedorInputs{
+   display: flex;
+   flex-direction: column;
+ }
+  
+ @media screen and (min-width:701px) and (max-width: 1199px){
+
+  footer{
+    bottom: 0%;
+  }
+  #encabezado{
+    display: flex;
+  }
+  .contenedorModal2{
+    width: fit-content;
+    height: fit-content;
+    z-index: 9999;
+  }
+  #formulario-registrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #formulario-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor-Registrar{
+    width: fit-content;
+    height: fit-content;
+  }
+
+  #login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #contenedor-registro{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+  }
+  #x-registrar{
+    width: 100%;
+  }
+  .indice{
+    align-items: center;
+  }
     .indice-footer{
       width: 100%;
     }
@@ -291,4 +404,28 @@ header {
     }
   }
   
- 
+  @media screen and (min-width:1200px) and (max-width: 3000px){
+    
+    footer{
+      bottom: 0px;
+      position: absolute;
+      
+    }
+
+    .contedor{
+      width: 100%;
+    }
+    nav{
+      padding-right:0px;
+    }
+    .contenedorModal2{
+      height: fit-content;
+      width: fit-content;
+      z-index: 9999;
+    }
+    #formulario-login{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
