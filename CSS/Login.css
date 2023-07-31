@@ -212,10 +212,6 @@ header {
    display: flex;
    justify-content: end;
   }
-  footer {
-    width: 100%;
-    position:relative;
-  }
   #botonEncabezado{
     display: none;
   }
@@ -244,6 +240,7 @@ header {
     }
     #opcionesMedia{
       display:block; 
+    
     }
     
     header{
@@ -263,6 +260,7 @@ header {
     .contenedor-Registrar{
       width: fit-content;
       height: fit-content;
+      z-index: 9999;
     }
     #x-registrar{
       width: 100%;
@@ -298,6 +296,9 @@ header {
     nav{
       padding: 0;
     }
+    
+      
+   
   }
   #contenedorBotonEncabezado{
     display: flex;
@@ -311,7 +312,8 @@ header {
    width: fit-content;
    height: fit-content;
    background-color: rgb(70, 132, 138);
-  position: fixed;
+   position: fixed;
+   z-index: 9999;
  
  }
  h2{
@@ -369,6 +371,7 @@ header {
   .contenedor-Registrar{
     width: fit-content;
     height: fit-content;
+    z-index: 9999;
   }
 
   #login{
@@ -402,14 +405,18 @@ header {
     nav{
       padding: 0;
     }
+    menu{
+      z-index: 9999;
+    }
   }
   
   @media screen and (min-width:1200px) and (max-width: 3000px){
-    
-    footer{
-      bottom: 0px;
-      position: absolute;
-      
+    #header{
+      z-index: 9999;
+      opacity: 1;
+    }
+    #contenedor-footer{
+       display: flex;
     }
 
     .contedor{
@@ -428,4 +435,24 @@ header {
       flex-direction: column;
       align-items: center;
     }
+    menu{
+      z-index: 9999;
+    }
+    footer{
+      width: 100%;
+      bottom: 0px;
+      display: flex;
+    }
+    header{
+      z-index: 9999;
+    }
+    #footer-indice{
+    display: flex;
+    }
+    #contenedor-footer{
+      width: 100%;
+    }
+  
   }
+  
+   
