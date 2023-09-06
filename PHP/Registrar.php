@@ -5,19 +5,18 @@ $correo=$_POST["mail"];
 $clave=$_POST["clave"];
 $confirmacion=$_POST["confirmacion"];
 $usuariosRegistrados=new UsuariosRegistrados();
+$existe=$usuariosRegistrados->verificarCorreo($correo);
 if($clave==$confirmacion){
-   $usuarioExistente=$usuariosRegistrados->verificarUsuario($nombre);
-   if($usuarioExistente){
-    echo "usuario ya en uso";
-   }
-   else{
-    $usuariosRegistrados->ponerUsuario($nombre,$correo,$clave);
-    $usuariosRegistrados->guardar();
-    echo "usuario registrado";
-   }
+    if($existe){
+        echo "<p style='color:#EDAD14'> Correo ya en uso </p>";
+    }
+    else{
+        $usuariosRegistrados->guardar($nombre,$correo,$clave);
+        echo "<p style='green'>usuario registrado </p>";
+    }
+    
 }
 else{
-    echo "las contraseñas no coinciden";
+    echo "<p style='color:red'>las contraseñas no coinciden</p>";
 }
-
 ?>

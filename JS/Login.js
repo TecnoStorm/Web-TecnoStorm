@@ -14,7 +14,6 @@ formulario.addEventListener('submit',function(e){
 })
 formularioLogin.addEventListener('submit',function(e){
   e.preventDefault();
-  alert("hola");
   EnvioLogin();
 
 })
@@ -33,21 +32,21 @@ function salirRegistrar(salirRegistrar){
   modalRegistrar.removeClass('showRegistrar')
 }
 
-function Envio(){
-  var datos = new FormData(formulario);
-  var usu=datos.get('usuario')
-  var contra=datos.get('clave')
-  var confirmacion=datos.get('confirmacion-Clave')
-  var mail=datos.get('correo')
-  alert("hola")
-  $.ajax({
-      url: 'http://127.0.0.1/TecnoStorm/PHP/Registrar.php',
+  function Envio() {
+    var datos = new FormData(formulario);
+    var usu = datos.get('usuario');
+    var contra = datos.get('clave');
+    var confirmacion = datos.get('confirmacion-Clave');
+    var mail = datos.get('correo');
+    alert("hola");
+    $.ajax({
+      url: 'http://127.0.0.1/TecnoStorm3/Web-TecnoStorm/PHP/Registrar.php',
       method: 'POST',
-      data: { 'usuario': usu, 'clave': contra,'confirmacion': confirmacion, 'mail': mail},
-      success: function(response) {
-          $("#mensaje").html(response)
+      data: { 'usuario': usu, 'clave': contra, 'confirmacion': confirmacion, 'mail': mail },
+      success: function (response) {
+        $("#mensaje").html(response);
       },
-      error: function() {
+      error: function () {
         alert("Error en la solicitud");
       }
     });
@@ -57,7 +56,7 @@ function Envio(){
     var usuario=datosLogin.get('usuario');
     var clave=datosLogin.get('clave');
     $.ajax({
-     url: 'http://127.0.0.1/TecnoStorm/PHP/Login.php',
+     url: 'http://127.0.0.1/TecnoStorm3/Web-TecnoStorm/PHP/Login.php',
      method: 'POST',
      data: { 'usuario': usuario, 'clave': clave},
      success: function(response) {
