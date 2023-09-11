@@ -116,6 +116,7 @@ header {
   .showRegistrar {
     pointer-events: auto;
     display: flex;
+    height: 250px;
   }
   
   #registrar {
@@ -165,10 +166,16 @@ header {
     justify-content: center;
     align-items: center;
     background-color: rgba(84, 149, 155, 0.908);
+
   }
-  #salirRegistrar {
-    margin-left: 15px;
-  }
+  
+    #salirRegistrar{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  
+
   
   #contenedor-registro {
     display: flex;
@@ -226,14 +233,32 @@ header {
     display: none;
   }
   @media screen and (max-width:700px){
-
+    #cerrarMenu{
+      width: 50px;
+      height: 50px;
+    }
+    #registrar{
+      width: 200px;
+    }
+    #formulario-Registrar{
+      box-sizing: border-box;
+    }
+    .titulo{
+      margin-bottom: 10px;
+    }
+    
+    #salir{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
     #encabezado{
       display: none;
     }
-    
+   
     #logoMediaQuery{
       display:block;
-      width: 50%;
+      width: 30%;
     }
     #loginMedia{
       display: block;
@@ -252,10 +277,43 @@ header {
       align-items: center;
     }
     .contenedorModal2{
-      width: fit-content;
+      width: 100%;
       flex-direction: column;
       height: fit-content;
       z-index: 9999;
+      height: 100%;
+      justify-content: center;
+    }
+
+    #formulario-login input{
+      width: 150%;
+      height: 100%;
+      border-radius: 14px;
+    }
+    #formulario-login input[type="text"], #formulario-login input[type="password"]{
+      height: 30px;
+      margin: 5px;
+      border-radius: 14px;
+    }
+    #formulario-login input[type="submit"]{
+      margin: 5px;
+    }
+    
+    #formulario-Registrar input{
+      width: 100%;
+      height: 100%;
+      border-radius: 14px;
+    }
+    #formulario-Registrar input[type="text"], #formulario-Registrar input[type="password"]{
+      height: 30px;
+      margin: 5px;
+      border-radius: 14px;
+    }
+    #formulario-Registrar input[type="submit"]{
+      margin: 5px;
+    }
+    ul.indice-footer{
+      bottom: auto;
     }
     .contenedor-Registrar{
       width: fit-content;
@@ -278,6 +336,11 @@ header {
       flex-direction: column;
       align-items: center;
     }
+    .contenedor-Registrar{
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
     main{
       padding-top: 0;
     }
@@ -296,8 +359,7 @@ header {
     nav{
       padding: 0;
     }
-    
-      
+   
    
   }
   #contenedorBotonEncabezado{
@@ -305,12 +367,17 @@ header {
     justify-content: space-between;
     background-color: white;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
  }
  #menu{
    display: none;
    flex-direction: column;
-   width: fit-content;
-   height: fit-content;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
    background-color: rgb(70, 132, 138);
    position: fixed;
    z-index: 9999;
@@ -325,7 +392,8 @@ header {
    border:1px solid black;
    border-radius: 5px;
    margin: 5px;
-   width: fit-content;
+   width: 50%;
+   text-align: center;
    color: rgba(7, 55, 59, 0.908);
    font-family: Arial, Helvetica, sans-serif;
    box-shadow: 2px 2px 2px rgba(23, 120, 129, 0.908);
@@ -337,8 +405,12 @@ header {
  }
  #contenedor-x{
    display: flex;
-   justify-content: end
-   
+   justify-content: end;
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 30%;
  }
  .ContenedorInputs{
    display: flex;
@@ -346,7 +418,9 @@ header {
  }
   
  @media screen and (min-width:701px) and (max-width: 1199px){
-
+  ul.indice-footer{
+    bottom: auto;
+  }
   footer{
     bottom: 0%;
   }
