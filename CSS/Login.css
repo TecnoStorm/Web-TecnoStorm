@@ -29,6 +29,13 @@ header {
     width: 100%;
     justify-content: right;
   }
+
+  .indice li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   nav ul li a {
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -147,13 +154,17 @@ header {
     width: 60px;
   }
   #boton {
-    color: rgb(0, 0, 0);
-    background-color: rgba(17, 188, 204, 0.908);
+    color: rgb(255, 255, 255);
+    background-color: rgba(74, 140, 238, 0.908);
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 5px;
-    padding: 5px 3px;
-    width: 60px;
+    border-radius: 30px;
+    width: 55px;
+    height: 55px;
+  }
+
+  #boton:hover{
+    cursor: pointer;
   }
 
   #letra-footer {
