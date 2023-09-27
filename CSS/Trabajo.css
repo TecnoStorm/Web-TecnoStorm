@@ -123,7 +123,7 @@ summary:hover{
 } 
 
 .p-summary{
-  background-color: rgba(15, 155, 197, 0.849);
+  background-color: rgba(26, 191, 241, 0.726);
 }
 
 .summary{
@@ -151,6 +151,7 @@ summary:hover{
   #formulario{
     margin-bottom: 0;
   }
+
   .ulSummary{
     height: 55%;
   } 

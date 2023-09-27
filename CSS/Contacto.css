@@ -68,8 +68,6 @@ input[type="submit"]:hover {
   border: 1px solid rgb(73, 70, 70);
 }
 
-
-
 h1 {
   display: flex;
   align-items: center;
@@ -210,6 +208,7 @@ ul.indice-footer {
   html{
     overflow-x:hidden;
   }
+  
   header{
     z-index: 9999;
   }

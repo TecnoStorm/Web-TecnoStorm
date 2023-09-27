@@ -28,7 +28,6 @@ body {
   align-items: center;
 }
 
-
 .mision-contenedor {
   display: flex;
   padding: 3%;
@@ -216,14 +215,16 @@ body {
     width: 80%;
   }
 
+
   .sobreNosotros-contenedor{
     margin-top: 25%;
   }
 }
 
 @media screen and (min-width:701px) and (max-width: 1199px) {
+  
   #encabezado {
-    width: 100%;
+    width: fit-content;
   }
 
   header{

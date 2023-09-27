@@ -33,6 +33,7 @@ body {
   font-size: 20px;
 }
 
+
 h1 {
   padding-bottom: 8px;
   color: hsl(182, 78%, 42%);
@@ -115,7 +116,10 @@ li {
   body {
     height: 100%;
   }
-
+  
+  #encabezado{
+    width: fit-content;
+  }
   .preguntas {
     width: 100%;
   }
@@ -136,6 +140,9 @@ li {
 @media screen and (min-width: 701px) and (max-width: 1199px) {
   body {
     height: 100%;
+  }
+  #encabezado{
+    width: fit-content;
   }
   .preguntas {
     width: 70%;
